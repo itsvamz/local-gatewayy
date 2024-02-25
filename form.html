@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nanum+Gothic'>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form class="booking-form" action="#" method="post">
+        <div class="elem-group">
+          <label for="name">Business Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Business E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Business Phone No.</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Avg Price for 2</label>
+          <input type="number" id="adult" name="total_adults" placeholder="150" min="150" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Tables Available</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group">
+          <label for="checkin-date">Address</label>
+          <input type="text" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Category</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Choose a Category from the List</option>
+              <option value="connecting">Food</option>
+              <option value="adjoining">Clothing</option>
+              <option value="adjacent">Accessories</option>
+              <option value="adjacent">Activities</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">About You!</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us about yourself!" required></textarea>
+        </div>
+        <button type="submit">Register Yourself on Local Gateway</button>
+      </form>
+      <script src="form.js"></script>
+</body>
+</html>
