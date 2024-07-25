@@ -21,24 +21,25 @@ const Menu = () => {
     };
     const getQuickOptions = () => {
         return getOptions([{
-                icon: "fa-solid fa-bell", label: "Notifications", url: "#"
+                icon: "🔔", label: "Notifications", url: "#"
             }, {
-                icon: "fa-solid fa-gear", label: "Settings", url: "profile.html"
+                icon: "⚙️", label: "Settings", url: "profile.html"
             }, {
-                icon: "fa-solid fa-moon", label: "Theme", onclick:"myFunction()"
+                icon: "🌙", label: "Theme", onclick:"myFunction()"
             }], "quick");
     };
+
     const getFullOptions = () => {
         return getOptions([{
-                icon: "fa-solid fa-house", label: "Home", url: "index.html"
+                icon: "🏠", label: "Home", url: "index.html"
             }, {
-                icon: "fa-solid fa-user", label: "About", url: "#"
+                icon: "👤", label: "About", url: "#"
             }, {
-                icon: "fa-solid fa-chart-line", label: "Register", url: "form.html"
+                icon: "📈", label: "Register", url: "form.html"
             }, {
-                icon: "fa-solid fa-heart", label: "Team", url: "team.html"
+                icon: "❤️", label: "Team", url: "team.html"
             }, {
-                icon: "fa-solid fa-wallet", label: "Contact", url: "contact.html"
+                icon: "💼", label: "Contact", url: "contact.html"
             }], "full");
     };
     return (React.createElement("div", { id: "menu", className: classNames({ toggled }) },
