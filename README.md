@@ -2,6 +2,8 @@
 
 Local Gateway is a transformative app designed to revolutionize how you explore new destinations. By unveiling hidden gems in every corner, Local Gateway empowers students, budget-conscious travelers, and aesthetes to discover unique clothing boutiques, trendy accessories, quaint cafes, and vibrant activities while supporting local businesses.
 
+Check out the site here : [Local Gateway](https://itsvamz.github.io/locals/)
+
 ## Problem Statement
 
 Budget-Conscious Exploration: Travelers often struggle to find affordable yet unique experiences. Local Gateway addresses this by providing cost-effective alternatives for shopping, dining, and activities.
